@@ -1,0 +1,28 @@
+@import "bootstrap-sprockets";
+@import "bootstrap";
+
+body {
+  padding-top: 30px;
+  background-color: #ffdb58;
+  #header {
+	  text-align: center;
+	  big_letters {
+	  	font-size: 3em;
+	  	font-weight: bold ;
+	  }
+	  small_letters {
+	  	font-size: 1.5em;
+	  }
+  }
+  #unsigned_user {
+  	 text-align: center;
+  }
+}
+footer {
+	text-align: center;
+	margin-top: 45px;
+	padding-top: 5px;
+	footer_font {
+		color: white;
+	}	
+}
