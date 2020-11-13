@@ -1,2 +1,8 @@
-<%=render 'home_page/header' %>
-<%=render 'users/registration_modal_window' %>
+<%= render 'home_page/header' %>
+<% if logged_in? %>
+ <%= link_to "Log out", logout_path, method: :delete %>
+  тут будут размещены проэкты
+<% else %>
+  <%= render 'users/registration_modal_window' %>
+  <%= render 'session/login_modal_window' %>
+<% end %>
